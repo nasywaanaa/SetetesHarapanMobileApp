@@ -1,0 +1,1899 @@
+/* Root Container */
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: auto;
+  margin-right: 40px;
+}
+
+.navbar-title {
+  color: white;
+  font-size: 24px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+}
+
+.navbar-title2 {
+  color: black;
+  font-size: 24px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+}
+
+/* Login Button */
+.login-button2 {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid rgba(238, 238, 238, 0.29);
+  background: linear-gradient(180deg, #8e1616 0%, #b3260e 40%, #ea3d03 100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 126, 126, 0.6);
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, #8e1716 0%, #280706 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 50px 5%;
+  overflow: hidden;
+}
+
+/* Hero Container */
+.hero-container {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* Hero Content */
+.hero-content {
+  max-width: 550px;
+  color: white;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #8e1616;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(255, 126, 126, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 40px rgba(255, 126, 126, 0.8);
+}
+
+/* Hero Image */
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 400px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-content {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+  }
+
+  .hero-image {
+    width: 80%;
+  }
+}
+
+/* Login Page Container */
+.login-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+}
+
+/* Left Side - Form */
+.login-form-container {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 80px;
+  background-color: white;
+}
+
+/* Logo and Title */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 100px; /* Increased to move it lower */
+}
+
+/* Logo */
+.login-logo {
+  width: 50px;
+  margin-right: 12px;
+}
+
+/* Title */
+.login-title-main {
+  font-size: 24px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+/* Typography */
+.login-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* Input Fields - Same Width */
+.input-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: left; /* Align text to the left */
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Ensure password field matches email field */
+.password-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Remember Me & Forgot Password */
+.login-options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-icon {
+  width: 18px;
+  margin-right: 8px;
+}
+
+.forgot-password {
+  color: #c00;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Login Button - Same Width */
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #8e1616;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  background-color: #b3260e;
+}
+
+/* Register Text */
+.register-text {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #666;
+}
+
+.register-link {
+  color: #c00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Separator */
+.separator {
+  width: 100%;
+  text-align: center;
+  margin: 17px 0;
+  font-size: 14px;
+  color: #888;
+  position: relative;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+}
+
+.separator::before {
+  left: 0;
+}
+
+.separator::after {
+  right: 0;
+}
+
+/* Google Sign-In */
+.google-button {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.google-button:hover {
+  background-color: #f7f7f7;
+}
+
+.google-icon {
+  width: 24px;
+  margin-right: 10px;
+}
+
+/* Right Side - Background */
+.login-bg {
+  width: 50%;
+  height: 100vh;
+  background: url("../assets/loginbg.jpg") no-repeat center center/cover;
+  position: relative;
+}
+
+/* Fix Overlay Issue - Cover Full Image */
+.bg-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(142, 23, 22, 0.75); /* Ensures full coverage */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*REGISTERRRRRRR*/
+
+/* Register Page */
+/* Register Page */
+.register-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center; /* Centers content properly */
+  justify-content: center;
+  overflow: hidden; /* Prevents unwanted scrolling */
+  padding-top: 0px; /* Removed excessive top padding */
+}
+
+/* Left Side - Background */
+.register-bg {
+  width: 50%;
+  height: 100vh;
+  background: url("../assets/registerbg.jpg") no-repeat center center/cover;
+  position: relative;
+}
+
+/* Overlay to darken the image */
+.bg-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(142, 23, 22, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Right Side - Form */
+.register-form-container {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content at the top */
+  align-items: flex-start;
+  padding: 40px 60px; /* Adjusted padding */
+  background-color: white;
+  overflow-y: auto; /* Allows scrolling if form is too long */
+}
+
+/* Logo and Title - Move to the Right */
+.logo-container2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end; /* Move content to the right */
+  margin-bottom: 20px;
+}
+
+/* Logo */
+.register-logo {
+  width: 50px;
+  margin-right: 12px;
+  margin-left: auto; /* Pushes logo to the right */
+}
+
+/* Title */
+.register-title-main {
+  font-size: 24px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  color: black;
+  text-align: right; /* Ensures text aligns to the right */
+}
+
+/* Typography */
+.register-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #111;
+  margin-top: 5px; /* Adjusted spacing */
+  margin-bottom: 10px;
+}
+
+.register-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+  width: 100%;
+  margin-bottom: 15px; /* Reduced spacing */
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Input Row (For Email & Phone) */
+.input-row {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.input-row .input-group {
+  width: 50%;
+}
+
+/* Password Wrapper */
+.password-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Terms & Conditions */
+.register-options {
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.agree-terms {
+  display: flex;
+  align-items: center;
+}
+
+.terms,
+.policy {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Register Button */
+.register-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4c5fd5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-button:hover {
+  background-color: #3b4cc9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .register-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .register-bg {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .register-form-container {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+}
+
+/* VERIFICATIONNNn */
+
+/* Verification Page */
+.verification-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 20px; /* Moves everything slightly higher */
+}
+
+/* Left Side - Form */
+.verification-form-container {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 60px; /* Reduced padding for higher placement */
+  background-color: white;
+}
+
+/* Logo and Title */
+.logo-container3 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px; /* Reduced space below logo */
+  margin-top: -20px; /* Moves logo slightly higher */
+}
+
+.verification-logo {
+  width: 50px;
+  margin-right: 12px;
+  margin-bottom: 40px;
+}
+
+.verification-title-main {
+  font-size: 24px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+/* Typography */
+.verification-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #111;
+  margin-top: -5px; /* Moves title higher */
+  margin-bottom: 10px;
+}
+
+.verification-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px; /* Adjusted spacing */
+}
+
+/* Back Link */
+.back-link {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 5px; /* Adjusted spacing */
+  display: block;
+}
+
+/* Input Fields */
+.input-group {
+  width: 100%;
+  margin-bottom: 15px; /* Reduced spacing */
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* Code Input */
+.code-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.toggle-code {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Resend Code */
+.resend-text {
+  font-size: 14px;
+  margin-bottom: 15px; /* Adjusted spacing */
+}
+
+.resend-link {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Confirm Button */
+.verification-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4c5fd5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.verification-button:hover {
+  background-color: #3b4cc9;
+}
+
+/* Right Side - Background */
+.verification-bg {
+  width: 50%;
+  height: 100vh;
+  background: url("../assets/verificationbg.jpg") no-repeat center center/cover;
+  position: relative;
+}
+
+/* Overlay to Darken the Image */
+.bg-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(142, 23, 22, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Homepage Container */
+.homepage-container {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  border-radius: 20px;
+  margin: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar-hp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #8e1716, #280706);
+  color: white;
+}
+
+.navbar-left-hp {
+  display: flex;
+  align-items: center;
+}
+
+.logo-hp {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.app-title-hp {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-text-hp {
+  font-size: 16px;
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.navbar-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.logout-button-hp,
+.edit-darah-button {
+  background: #b3260e;
+  padding: 10px 16px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.logout-button-hp:hover,
+.edit-darah-button:hover {
+  background: #ea3d03;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+/* Control Bar - Combines Filters and Real-time Controls */
+.control-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Filters */
+.filters-hp {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-input-hp {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.filter-button-hp {
+  padding: 10px 15px;
+  border: none;
+  background: #8e1716;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-button-hp:hover {
+  background: #b3260e;
+  transform: translateY(-2px);
+}
+/* Real-time Controls */
+.realtime-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Apply styles to button elements in realtime-controls */
+.realtime-controls button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Active button state (auto refresh on) - green */
+.realtime-controls button.active {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #4caf50;
+}
+
+/* Inactive button state (auto refresh off) - red */
+.realtime-controls button.inactive {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ef5350;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* Status dot for active state */
+.realtime-controls button.active .status-dot {
+  background-color: #4caf50;
+  box-shadow: 0 0 5px #4caf50;
+  animation: pulse 2s infinite;
+}
+
+/* Status dot for inactive state */
+.realtime-controls button.inactive .status-dot {
+  background-color: #ef5350;
+}
+
+/* Define the pulse animation */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.last-updated {
+  color: #666;
+  font-size: 13px;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+}
+
+/* Main Content */
+.main-content-hp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+  flex: 1;
+}
+
+/* Top Row Content */
+.top-row-content {
+  display: flex;
+  gap: 30px; /* Increased gap between stats column and charts */
+  margin-bottom: 30px; /* Increased bottom margin */
+}
+
+/* Statistics Cards */
+.stats-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 320px;
+  min-width: 280px; /* Ensure minimum width for stats column */
+  margin-right: 10px; /* Additional right margin for stats column */
+}
+
+.stats-card-hp {
+  background: white;
+  padding: 10px; /* Reduced padding from 15px to 10px */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eaeaea;
+  text-align: center;
+  margin-bottom: 8px;
+  flex-grow: 1;
+  transition: transform 0.2s ease;
+  width: 100%;
+  height: auto; /* Changed from 10% to auto */
+  max-height: 140px; /* Added max-height to make cards smaller */
+}
+
+.stats-card-hp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stats-value-hp {
+  font-size: 22px; /* Slightly reduced from 24px */
+  font-weight: bold;
+  margin: 6px 0; /* Reduced from 10px */
+}
+
+.stats-value-hp span {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.stats-subtext-hp {
+  font-size: 12px;
+  color: #8e1616;
+  margin-top: 4px; /* Added to reduce spacing */
+  margin-bottom: 4px; /* Added to reduce spacing */
+}
+
+/* Chart Section - Add space between chart column and stats column */
+.chart-column {
+  flex: 1;
+  padding-left: 10px; /* Add left padding to create visual separation */
+  margin-bottom: 40px; /* Add bottom margin to create vertical gap */
+}
+
+/* Chart Cards */
+.chart-card-hp {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eaeaea;
+  transition: transform 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px; /* Add bottom margin to each chart card */
+}
+
+.chart-card-hp:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.chart-placeholder-hp {
+  width: 100%;
+  flex: 1;
+  background: #f8f8f8;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #999;
+  min-height: 250px;
+}
+
+/* Blood comparison grid layout */
+.blood-comparison-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+  margin-bottom: 40px; /* Add bottom margin to the entire grid */
+}
+
+.blood-comparison-row {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+  margin-bottom: 40px; /* Add bottom margin to each row */
+}
+
+.blood-chart {
+  flex: 1;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px; /* Add bottom margin to each chart */
+}
+
+.blood-chart h3 {
+  margin-bottom: 8px;
+}
+
+.blood-chart .chart-placeholder-hp {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* City Distribution */
+.city-distribution {
+  max-height: 250px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.city-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.city-name {
+  font-weight: 500;
+}
+
+.city-count {
+  color: #8e1616;
+  font-weight: 600;
+}
+
+/* Full Width Map */
+.full-width-map-container {
+  width: 100%;
+  margin: 15px 0;
+  margin-bottom: 30px;
+}
+
+.chart-card-hp.full-width {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  overflow: visible; /* Changed from hidden to visible */
+  height: auto; /* Changed from 60% to auto to fit content */
+  min-height: 650px; /* Set a minimum height for the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.chart-card-hp h3 {
+  margin-bottom: 10px; /* Slightly increased */
+  margin-top: 10px; /* Reduced from 50px */
+}
+
+.map-container {
+  width: 100%;
+  height: 600px; /* Fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  position: relative; /* Added position relative */
+}
+
+/* Make the Plotly container responsive */
+.map-container > div {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important; /* Position absolute to prevent overflow issues */
+  top: 0;
+  left: 0;
+}
+
+/* Make sure SVG elements in the map are fully visible */
+.map-container svg {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  overflow: visible;
+}
+
+/* Make the legend visible and properly sized */
+.map-container .legend {
+  max-width: 200px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+/* Ensure text elements are readable */
+.map-container text {
+  font-size: 12px !important;
+}
+
+/* Loading and Error Containers */
+.loading-container,
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.error-container button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #8e1716;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Add these styles to your App.css file */
+
+.emergency-blood-request-section {
+  width: 100%;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.emergency-card {
+  background-color: #a71d21;
+  color: white;
+  border-radius: 8px;
+  padding: 30px 250px;
+  position: relative;
+  display: flex;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+.urgent-container {
+  position: absolute;
+  right: 1.25rem; /* right-5 */
+  top: 50%; /* top-1/2 */
+  transform: translateY(-50%); /* -translate-y-1/2 */
+}
+
+.urgent-image {
+  width: 10%; /* Reduced from 120px to 80px */
+  height: 10%;
+}
+
+.urgent-logo {
+  width: 20%; /* atau ukuran yang lebih kecil sesuai kebutuhan */
+  height: 20%; /* menjaga aspek rasio */
+  margin-left: 500px;
+}
+
+.emergency-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  z-index: 2;
+  margin-left: 30px;
+}
+
+.emergency-header {
+  margin-bottom: 40px;
+}
+
+.emergency-header h2 {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.emergency-header h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.emergency-header h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.emergency-button {
+  font-weight: bold; /* Membuat tulisan tebal */
+  font-size: 16px; /* Sesuaikan ukuran tulisan */
+  padding: 10px 20px; /* Sesuaikan padding untuk ukuran tombol */
+  background-color: #ffffff; /* Warna tombol */
+  color: #8e1616; /* Warna teks */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.emergency-button:hover {
+  background-color: #8e1616; /* Warna saat tombol di-hover */
+  color: #ffffff;
+}
+
+/* Animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 5px rgba(76, 175, 80, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 1200px) {
+  .map-container {
+    min-height: 700px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .top-row-content {
+    flex-direction: column;
+  }
+
+  .stats-column {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .chart-column {
+    padding-left: 0;
+  }
+
+  .blood-comparison-row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map-container {
+    min-height: 450px;
+  }
+}
+
+/* EDIT DARAHHHHHH*/
+
+/* General Layout */
+.edit-darah-container-ed {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, #8e1716 0%, #280706 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  overflow: scroll;
+}
+
+/* Navbar */
+.navbar-ed {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: transparent;
+  color: white;
+}
+
+.navbar-left-ed {
+  display: flex;
+  align-items: center;
+}
+
+.logo-ed {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.app-title-ed {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Kementrian Kesehatan Text */
+/* Right Section (Text + Logout Button) */
+.navbar-right-ed {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Push items to the right */
+  flex-grow: 1; /* Allow elements to expand */
+}
+
+/* Move "Kementrian Kesehatan Indonesia" Closer to Logout */
+.navbar-text-ed {
+  font-size: 16px;
+  white-space: nowrap; /* Prevents text wrapping */
+  margin-right: 15px; /* Moves text closer to Logout button */
+}
+
+.logout-button-ed {
+  background: linear-gradient(180deg, #8e1616 0%, #b3260e 40%, #ea3d03 100%);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Card Container */
+.card-ed {
+  width: 80%;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+/* Tabs */
+.tabs-ed {
+  display: flex;
+  border-bottom: 2px solid #8e1616;
+}
+
+.tab-ed {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.tab-ed.active-ed {
+  background: #8e1616;
+  color: white;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Form */
+.blood-form-ed {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.section-title-ed {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Input Groups */
+.input-group-ed {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Make Inputs & Selects the Same Width */
+.input-group-ed input,
+.input-group-ed select {
+  flex: 1; /* Both elements take equal space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  min-width: 0; /* Prevents elements from shrinking */
+}
+
+/* Submit Button */
+.submit-button-ed {
+  width: 100%;
+  padding: 12px;
+  background-color: #8e1616;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-button-ed:hover {
+  background-color: #b3260e;
+}
+
+/* Kurang Darah */
+
+/* General Layout */
+.kurang-darah-container-kd {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, #8e1716 0%, #280706 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  overflow: scroll;
+}
+
+/* Navbar */
+.navbar-kd {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-left-kd {
+  display: flex;
+  align-items: center;
+}
+
+.logo-kd {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.app-title-kd {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-text-kd {
+  font-size: 16px;
+}
+
+.logout-button-kd {
+  background: linear-gradient(180deg, #8e1616 0%, #b3260e 40%, #ea3d03 100%);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Card Container */
+.card-kd {
+  width: 85%;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+/* Tabs */
+.tabs-kd {
+  display: flex;
+  border-bottom: 2px solid #8e1616;
+}
+
+.tab-kd {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.tab-kd.active-kd {
+  background: #8e1616;
+  color: white;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Filters */
+.filters-kd {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.filters-kd select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Table */
+.blood-table-kd {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.blood-table-kd th,
+.blood-table-kd td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.use-button-kd {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.use-button-kd:hover {
+  background-color: #c0392b;
+}
+
+/* POP UP MODAL */
+
+/* Modal Overlay */
+.modal-overlay-kd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Dark background overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  font-family: "Inter", sans-serif;
+}
+
+/* Modal Container */
+.modal-container-kd {
+  background: white;
+  width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Modal Header */
+.modal-header-kd {
+  background: #8e1616;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header-kd h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.close-button-kd {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Modal Body */
+.modal-body-kd {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Input Fields */
+.modal-body-kd input,
+.modal-body-kd textarea {
+  width: 90%; /* Reduce width */
+  max-width: 350px; /* Prevents from being too wide */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  background: #f8f8f8;
+  transition: 0.3s;
+}
+
+/* Send Button */
+.send-button-kd {
+  width: 100%;
+  padding: 12px;
+  background-color: #8e1616;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.send-button-kd:hover {
+  background-color: #b3260e;
+}
+
+/* Filters Container */
+.filters-container-kd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between search and filters */
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Search Input - Left Aligned */
+.search-input-kd {
+  width: 290px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Filters Wrapper (Golongan, Rhesus, Jenis) - Right Aligned */
+.filters-right-kd {
+  display: flex;
+  gap: 10px;
+}
+
+/* Select Filters */
+.filters-right-kd select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+/* Main Container - Full viewport width */
+.blasting-info-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 0px;
+}
+
+/* Card Layout - Fixed width for desktop */
+.blasting-card {
+  width: 5000px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 264px;
+}
+
+/* Navbar */
+.navbar-blasting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background: linear-gradient(90deg, #8e1716, #280706);
+  color: white;
+}
+
+.navbar-left-blasting {
+  display: flex;
+  align-items: center;
+}
+
+.logo-blasting {
+  width: 40px;
+  height: auto;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+
+.app-title-blasting {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: -30px;
+  margin-top: 3px;
+}
+
+/* Form Container */
+.form-container-blasting {
+  padding: 30px 40px 40px;
+}
+
+/* Form Title */
+.form-title-blasting {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Form Content Grid */
+.blasting-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 25px;
+}
+
+/* Form Groups */
+.form-group-blasting {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.blasting-label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Input and Select Fields - Unified styling */
+.blasting-input,
+.blasting-select {
+  width: 90%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: white;
+  transition: border-color 0.2s;
+}
+
+.blasting-input:focus,
+.blasting-select:focus {
+  border-color: #8e1716;
+  outline: none;
+}
+
+/* Textarea */
+.blasting-textarea {
+  width: 100%;
+  height: 120px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 25px;
+  resize: vertical;
+}
+
+.blasting-textarea:focus {
+  border-color: #8e1716;
+  outline: none;
+}
+
+/* Full Width Container */
+.full-width {
+  grid-column: span 2;
+  margin-bottom: 5px;
+}
+
+/* Submit Button */
+.submit-button-blasting {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #8e1716, #b3260e);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 10px rgba(142, 23, 22, 0.3);
+}
+
+.submit-button-blasting:hover {
+  background: linear-gradient(90deg, #b3260e, #8e1716);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(142, 23, 22, 0.4);
+}
+
+.submit-button-blasting:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(142, 23, 22, 0.3);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .blasting-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+  .form-container-blasting {
+    padding: 20px;
+  }
+}
